@@ -2,10 +2,27 @@
   "name": "@gzu/app-sdk",
   "version": "1.0.3",
   "description": "",
+
   "main": "index.js",
+  "type": "module",
+  "files": [
+    "dist",
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "patch": "npm version patch && npm version && git push --follow-tags"
   },
+  "author": "xuyan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vtronxy/app-sdk/issues"
+  },
+  "homepage": "https://github.com/vtronxy/app-sdk#readme",
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vtronxy/app-sdk.git"
@@ -18,15 +35,9 @@
     "promise",
     "dialog"
   ],
-  "files": [
-    "index.js",
-    "README.md",
-    "LICENSE"
-  ],
-  "author": "xuyan",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/vtronxy/app-sdk/issues"
-  },
-  "homepage": "https://github.com/vtronxy/app-sdk#readme"
+
+  "devDependencies": {
+    "@total-typescript/tsconfig": "^1.0.4",
+    "typescript": "^5.7.3"
+  }
 }
