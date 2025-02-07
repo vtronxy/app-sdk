@@ -1,8 +1,7 @@
 {
   "name": "@gzu/app-sdk",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
-
   "main": "index.js",
   "type": "module",
   "files": [
@@ -22,7 +21,6 @@
     "url": "https://github.com/vtronxy/app-sdk/issues"
   },
   "homepage": "https://github.com/vtronxy/app-sdk#readme",
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vtronxy/app-sdk.git"
@@ -35,7 +33,6 @@
     "promise",
     "dialog"
   ],
-
   "devDependencies": {
     "@total-typescript/tsconfig": "^1.0.4",
     "typescript": "^5.7.3"
